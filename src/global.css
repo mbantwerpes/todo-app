@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500;900&display=swap");
 
-/* VARIABLES */
-
 :root {
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Montserrat", sans-serif;
@@ -14,10 +12,6 @@
   --clr-text-secondary: hsl(0, 0%, 7%);
   --clr-content-passive: hsl(0, 0%, 83%);
 }
-
-/* / VARIABLES */
-
-/* GLOBALS */
 
 *,
 *::after,
@@ -42,5 +36,3 @@ textarea {
   margin: 0;
   font-family: var(--ff-primary);
 }
-
-/* / GLOBALS */
