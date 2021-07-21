@@ -1,16 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500;900&display=swap");
 
 /* VARIABLES */
 
 :root {
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Montserrat", sans-serif;
-  --fw-primary-100: 100;
-  --fw-primary-300: 300;
-  --fw-primary-400: 400;
-  --fw-primary-500: 500;
-  --fw-primary-700: 700;
-  --fw-primary-900: 900;
+  --fw-primary-medium: 500;
+  --fw-primary-black: 900;
   --fw-secondary-semi-bold: 600;
   --clr-primary: hsl(345, 99%, 64%);
   --clr-secondary: hsl(245, 71%, 22%);
