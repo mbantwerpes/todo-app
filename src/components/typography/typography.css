@@ -1,13 +1,5 @@
 h1,
 h2,
-h3,
-h5,
-h6 {
-  font-family: var(--ff-primary);
-}
-
-h1,
-h2,
 h3 {
   font-weight: var(--fw-primary-bold);
 }
