@@ -30,4 +30,21 @@ textarea {
 
 /* VARIABLES */
 
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Montserrat", sans-serif;
+  --fw-primary-100: 100;
+  --fw-primary-300: 300;
+  --fw-primary-400: 400;
+  --fw-primary-500: 500;
+  --fw-primary-700: 700;
+  --fw-primary-900: 900;
+  --fw-secondary-semi-bold: 600;
+  --clr-primary: hsl(345, 99%, 64%);
+  --clr-secondary: hsl(245, 71%, 22%);
+  --clr-text-primary: hsl(0, 0%, 22%);
+  --clr-text-secondary: hsl(0, 0%, 7%);
+  --clr-content-passive: hsl(0, 0%, 83%);
+}
+
 /* / VARIABLES */
