@@ -7,24 +7,28 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.938rem;
+  font-weight: var(--fw-primary-bold);
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  font-weight: var(--fw-primary-bold);
 }
 
 h3 {
   font-size: 1.5rem;
+  font-weight: var(--fw-primary-bold);
 }
 
 h4 {
   font-family: var(--ff-secondary);
   font-weight: var(--fw-secondary-bold);
-  font-size: 1.25rem;
+  font-size: 0.938rem;
 }
 
 h5,
 h6 {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: var(--fw-primary);
 }
