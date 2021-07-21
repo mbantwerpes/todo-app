@@ -3,9 +3,9 @@
 :root {
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Montserrat", sans-serif;
-  --fw-primary-medium: 500;
-  --fw-primary-black: 900;
-  --fw-secondary-semi-bold: 600;
+  --fw-primary: 500;
+  --fw-primary-bold: 900;
+  --fw-secondary-bold: 600;
   --clr-primary: hsl(345, 99%, 64%);
   --clr-secondary: hsl(245, 71%, 22%);
   --clr-text-primary: hsl(0, 0%, 22%);
