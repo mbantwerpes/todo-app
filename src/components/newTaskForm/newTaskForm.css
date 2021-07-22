@@ -12,8 +12,23 @@
 .taskDescriptionInput {
   width: 100%;
   border-style: none;
-  text-align: center;
-  border-bottom: 1px solid var(--clr-content-passive);
+  padding: 3em 0;
+  padding-left: 3em;
+}
+
+.taskDescriptionInput::-webkit-input-placeholder {
+  color: var(--clr-content-passive);
+  font-size: 3em;
+  border-bottom: 3px solid var(--clr-content-passive);
+}
+.taskDescriptionInput::-moz-placeholder {
+  color: var(--clr-content-passive);
+}
+.taskDescriptionInput:-ms-input-placeholder {
+  color: var(--clr-content-passive);
+}
+.taskDescriptionInput:-moz-placeholder {
+  color: var(--clr-content-passive);
 }
 
 .radioButtonGrp {
