@@ -1,5 +1,12 @@
+.container {
+  height: 100vh;
+}
+
 .newTaskForm {
-  color: black;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .visuallyhidden {
