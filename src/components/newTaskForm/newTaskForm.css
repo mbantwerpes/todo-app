@@ -20,13 +20,17 @@
   color: var(--clr-content-passive);
   font-size: 3em;
   border-bottom: 3px solid var(--clr-content-passive);
+  border-spacing: 100px;
 }
+
 .taskDescriptionInput::-moz-placeholder {
   color: var(--clr-content-passive);
 }
+
 .taskDescriptionInput:-ms-input-placeholder {
   color: var(--clr-content-passive);
 }
+
 .taskDescriptionInput:-moz-placeholder {
   color: var(--clr-content-passive);
 }
@@ -38,6 +42,9 @@
 
 fieldset {
   border-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 3em;
 }
 
 ul {
