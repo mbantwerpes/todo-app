@@ -13,7 +13,7 @@
   width: 100%;
   border-style: none;
   padding: 3em 0;
-  padding-left: 3em;
+  padding-left: 8%;
 }
 
 .taskDescriptionInput::-webkit-input-placeholder {
@@ -44,7 +44,7 @@ fieldset {
   border-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 3em;
+  padding-left: 8%;
 }
 
 ul {
