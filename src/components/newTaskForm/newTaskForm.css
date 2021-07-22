@@ -14,6 +14,23 @@
   justify-content: space-around;
 }
 
+ul {
+  list-style: none;
+}
+.radioButtonGrp li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.radioButtonGrp input {
+  visibility: hidden;
+}
+.radioButtonGrp label {
+  cursor: pointer;
+}
+.radioButtonGrp input:checked + label {
+  background: red;
+}
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
