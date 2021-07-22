@@ -42,7 +42,8 @@ fieldset {
 
 ul {
   list-style: none;
-  background-color: var(--clr-content-passive);
+  background-color: hsl(0, 0%, 83%, 0.1);
+  color: hsl(0, 0%, 22%, 0.68);
   padding: 2em 1em;
   font-size: 0.8em;
 }
