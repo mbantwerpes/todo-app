@@ -9,6 +9,13 @@
   justify-content: space-between;
 }
 
+.taskDescriptionInput {
+  width: 100%;
+  border-style: none;
+  text-align: center;
+  border-bottom: 1px solid var(--clr-content-passive);
+}
+
 .radioButtonGrp {
   display: flex;
   justify-content: space-around;
@@ -22,17 +29,22 @@ ul {
   list-style: none;
   background-color: var(--clr-content-passive);
   padding: 2em 1em;
+  font-size: 0.8em;
 }
+
 .radioButtonGrp li {
   display: inline-block;
   margin-right: 15px;
 }
+
 .radioButtonGrp input {
   visibility: hidden;
 }
+
 .radioButtonGrp label {
   cursor: pointer;
 }
+
 .radioButtonGrp input:checked + label {
   color: var(--clr-primary);
 }
