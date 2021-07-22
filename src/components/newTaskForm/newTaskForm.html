@@ -6,18 +6,22 @@
     </div>
     <fieldset>
       <legend>WHEN</legend>
-      <p>
-        <input type="radio" id="radioToday" value="today" />
-        <label for="radioToday">Today</label>
-      </p>
-      <p>
-        <input type="radio" id="radioTomorrow" value="tomorrow" />
-        <label for="radioTomorrow">Tomorrow</label>
-      </p>
-      <p>
-        <input type="radio" id="radioDate" value="date" />
-        <label for="radioDate">Select Date</label>
-      </p>
+      <div class="radioButtonGrp">
+        <ul>
+          <li>
+            <input type="radio" id="radioToday" value="today" />
+            <label for="radioToday">Today</label>
+          </li>
+          <li>
+            <input type="radio" id="radioTomorrow" value="tomorrow" />
+            <label for="radioTomorrow">Tomorrow</label>
+          </li>
+          <li>
+            <input type="radio" id="radioDate" value="date" />
+            <label for="radioDate">Select Date</label>
+          </li>
+        </ul>
+      </div>
     </fieldset>
     <input type="submit" value="Add Task" />
   </form>
