@@ -1,4 +1,4 @@
-.container {
+.newTaskFormContainer {
   height: 100vh;
 }
 
@@ -10,7 +10,8 @@
 }
 
 /* taskDescriptionInput */
-.taskDescriptionInput {
+
+.newTaskForm .taskDescriptionInput {
   width: 100%;
   border-style: none;
   padding: 3rem 0;
@@ -18,48 +19,45 @@
   font-size: 2rem;
 }
 
-.taskDescriptionInput::-webkit-input-placeholder {
+.newTaskForm .taskDescriptionInput::-webkit-input-placeholder {
   color: hsla(0, 0%, 22%, 0.21);
   border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
   padding-bottom: 1rem;
 }
 
-.taskDescriptionInput::-moz-placeholder {
+.newTaskForm .taskDescriptionInput::-moz-placeholder {
   color: hsla(0, 0%, 22%, 0.21);
   border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
   padding-bottom: 1rem;
 }
 
-.taskDescriptionInput:-ms-input-placeholder {
+.newTaskForm s.taskDescriptionInput:-ms-input-placeholder {
   color: hsla(0, 0%, 22%, 0.21);
   border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
   padding-bottom: 1rem;
 }
 
-.taskDescriptionInput:-moz-placeholder {
+.newTaskForm .taskDescriptionInput:-moz-placeholder {
   color: hsla(0, 0%, 22%, 0.21);
   border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
   padding-bottom: 1rem;
 }
 
-.taskDescriptionInput:focus {
+.newTaskForm .taskDescriptionInput:focus {
   outline: none;
 }
 
 /* radioButtonGrp */
-.radioButtonGrp {
-  display: flex;
-  justify-content: space-around;
-}
-
-fieldset {
+.newTaskForm fieldset {
   border-style: none;
   margin: 0;
   padding: 0;
   padding-left: 8%;
 }
 
-ul {
+.radioButtonGrp {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
   background-color: hsl(0, 0%, 83%, 0.1);
   color: hsl(0, 0%, 22%, 0.68);
@@ -85,7 +83,7 @@ ul {
 }
 
 /* addTaskBtn */
-.addTaskBtn {
+.newTaskForm .addTaskBtn {
   padding: 1.7em 0;
   background-color: var(--clr-primary);
   color: white;
