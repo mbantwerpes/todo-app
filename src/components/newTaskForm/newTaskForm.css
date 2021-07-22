@@ -12,15 +12,15 @@
 .taskDescriptionInput {
   width: 100%;
   border-style: none;
-  padding: 3em 0;
+  padding: 3rem 0;
   padding-left: 8%;
+  font-size: 2rem;
 }
 
 .taskDescriptionInput::-webkit-input-placeholder {
   color: var(--clr-content-passive);
-  font-size: 3em;
   border-bottom: 3px solid var(--clr-content-passive);
-  border-spacing: 100px;
+  padding-bottom: 1rem;
 }
 
 .taskDescriptionInput::-moz-placeholder {
