@@ -1,0 +1,15 @@
+.taskList {
+  list-style: none;
+}
+
+.task {
+  margin: 1.6rem 0;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.taskFinished {
+  text-decoration: line-through;
+  text-decoration-color: var(--clr-primary);
+  text-decoration-thickness: 2px;
+}
