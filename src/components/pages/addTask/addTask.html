@@ -1,0 +1,38 @@
+<div class="addTaskContainer">
+  <h1>Add new</h1>
+  <form class="newTaskForm">
+    <div>
+      <label class="visuallyhidden" for="newTaskInput">DESCRIPTION</label>
+      <input
+        class="taskDescriptionInput"
+        type="text"
+        id="newTaskInput"
+        placeholder="Enter Task"
+      />
+    </div>
+    <fieldset>
+      <legend>WHEN</legend>
+      <ul class="radioButtonGrp">
+        <li>
+          <input
+            type="radio"
+            id="radioToday"
+            name="when"
+            value="today"
+            checked="checked"
+          />
+          <label for="radioToday">Today</label>
+        </li>
+        <li>
+          <input type="radio" id="radioTomorrow" name="when" value="tomorrow" />
+          <label for="radioTomorrow">Tomorrow</label>
+        </li>
+        <li>
+          <input type="radio" id="radioDate" name="when" value="date" />
+          <label for="radioDate">Select Date</label>
+        </li>
+      </ul>
+    </fieldset>
+    <button class="addTaskBtn" type="submit">Add Task</button>
+  </form>
+</div>
