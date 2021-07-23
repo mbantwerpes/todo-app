@@ -1,5 +1,18 @@
+.taskListContainer {
+  height: 70vh;
+}
+
 .taskList {
+  padding: 1rem 2rem;
+  height: 30rem;
   list-style: none;
+  overflow-y: scroll;
+  background-color: hsl(0, 0%, 83%, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
 .task {
