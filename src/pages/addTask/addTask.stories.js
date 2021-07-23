@@ -6,4 +6,4 @@ export default {
   parameters: { layout: "fullscreen" },
 };
 
-export const regular = () => addTask;
+export const addTaskRegular = () => addTask;
