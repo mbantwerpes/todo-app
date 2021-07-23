@@ -1,0 +1,11 @@
+.taskListPageContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.taskListPageContainer h1 {
+  padding-left: 8%;
+  align-self: end;
+  font-size: 2.4rem;
+}
