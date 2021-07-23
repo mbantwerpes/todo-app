@@ -71,7 +71,8 @@
 }
 
 .radioButtonGrp input {
-  visibility: hidden;
+  size: 0;
+  opacity: 0;
 }
 
 .radioButtonGrp label {
