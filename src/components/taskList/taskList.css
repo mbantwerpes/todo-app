@@ -23,9 +23,7 @@
 }
 
 .taskFinished {
-  text-decoration: line-through;
-  text-decoration-color: var(--clr-primary);
-  text-decoration-thickness: 2px;
+  text-decoration: line-through solid var(--clr-primary) 2px;
 }
 
 .taskListRadioBtnGrp {
