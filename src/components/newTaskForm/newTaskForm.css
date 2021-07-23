@@ -19,25 +19,7 @@
   font-size: 2rem;
 }
 
-.newTaskForm .taskDescriptionInput::-webkit-input-placeholder {
-  color: hsla(0, 0%, 22%, 0.21);
-  border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
-  padding-bottom: 1rem;
-}
-
-.newTaskForm .taskDescriptionInput::-moz-placeholder {
-  color: hsla(0, 0%, 22%, 0.21);
-  border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
-  padding-bottom: 1rem;
-}
-
-.newTaskForm s.taskDescriptionInput:-ms-input-placeholder {
-  color: hsla(0, 0%, 22%, 0.21);
-  border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
-  padding-bottom: 1rem;
-}
-
-.newTaskForm .taskDescriptionInput:-moz-placeholder {
+.newTaskForm .taskDescriptionInput::placeholder {
   color: hsla(0, 0%, 22%, 0.21);
   border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
   padding-bottom: 1rem;
