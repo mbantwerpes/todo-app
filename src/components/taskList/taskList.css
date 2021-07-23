@@ -28,10 +28,7 @@
   text-decoration-thickness: 2px;
 }
 
-/* radioButtonGrp */
 .taskListRadioBtnGrp {
-  /* align-self: center;
-  justify-self: center; */
   display: flex;
   justify-content: space-around;
   align-items: center;
