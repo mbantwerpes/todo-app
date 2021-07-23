@@ -1,0 +1,86 @@
+.newTaskFormContainer {
+  height: 100vh;
+}
+
+.newTaskForm {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* taskDescriptionInput */
+.newTaskForm .taskDescriptionInput {
+  width: 100%;
+  border-style: none;
+  padding: 3rem 0;
+  padding-left: 8%;
+  font-size: 2rem;
+}
+
+.newTaskForm .taskDescriptionInput::placeholder {
+  color: hsla(0, 0%, 22%, 0.21);
+  border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
+  padding-bottom: 1rem;
+}
+
+.newTaskForm .taskDescriptionInput:focus {
+  outline: none;
+}
+
+/* radioButtonGrp */
+.newTaskForm fieldset {
+  border-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 8%;
+}
+
+.radioButtonGrp {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: hsl(0, 0%, 83%, 0.1);
+  color: hsl(0, 0%, 22%, 0.68);
+  padding: 2em 1em;
+  font-size: 0.8em;
+}
+
+.radioButtonGrp li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.radioButtonGrp input {
+  size: 0;
+  opacity: 0;
+}
+
+.radioButtonGrp label {
+  cursor: pointer;
+}
+
+.radioButtonGrp input:checked + label {
+  color: var(--clr-primary);
+}
+
+/* addTaskBtn */
+.newTaskForm .addTaskBtn {
+  padding: 1.7em 0;
+  background-color: var(--clr-primary);
+  color: white;
+  border-style: none;
+  font-size: 1.2rem;
+}
+
+/* Helper class */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
