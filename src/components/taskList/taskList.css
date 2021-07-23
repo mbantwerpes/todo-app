@@ -30,11 +30,13 @@
 
 /* radioButtonGrp */
 .taskListRadioBtnGrp {
-  align-self: center;
-  justify-self: center;
+  /* align-self: center;
+  justify-self: center; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  display: inline-block;
   margin-right: 15px;
   color: hsla(0, 0%, 0%, 0.2);
   font-size: 0.8rem;
