@@ -4,7 +4,8 @@
   grid-template-rows: 1fr 3fr;
 }
 
-.addTaskContainer h2 {
+.addTaskContainer h1 {
   padding-left: 8%;
   align-self: end;
+  font-size: 2.4rem;
 }
