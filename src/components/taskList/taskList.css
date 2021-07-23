@@ -6,7 +6,6 @@
 
 .taskList {
   padding: 1rem 2rem;
-  height: 30rem;
   list-style: none;
   overflow-y: scroll;
   background-color: hsl(0, 0%, 83%, 0.1);
@@ -31,6 +30,8 @@
 
 /* radioButtonGrp */
 .taskListRadioBtnGrp {
+  align-self: center;
+  justify-self: center;
   writing-mode: vertical-lr;
   text-orientation: mixed;
   display: inline-block;
