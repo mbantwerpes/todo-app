@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="addTaskContainer">
+      <h1>Add new</h1>
+      <form class="newTaskForm">
+        <div>
+          <label class="visuallyhidden" for="newTaskInput">DESCRIPTION</label>
+          <input
+            class="taskDescriptionInput"
+            type="text"
+            id="newTaskInput"
+            placeholder="Enter Task"
+          />
+        </div>
+        <fieldset>
+          <legend>WHEN</legend>
+          <ul class="radioButtonGrp">
+            <li>
+              <input
+                type="radio"
+                id="radioToday"
+                name="when"
+                value="today"
+                checked="checked"
+              />
+              <label for="radioToday">Today</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="radioTomorrow"
+                name="when"
+                value="tomorrow"
+              />
+              <label for="radioTomorrow">Tomorrow</label>
+            </li>
+            <li>
+              <input type="radio" id="radioDate" name="when" value="date" />
+              <label for="radioDate">Select Date</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="addTaskBtn" type="submit">Add Task</button>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
