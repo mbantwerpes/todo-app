@@ -16,8 +16,7 @@ const createTaskListItem = (descriptionText) => {
   span.className = "taskItem__labelText";
   span.innerText = descriptionText;
 
-  label.appendChild(input);
-  label.appendChild(span);
+  label.append(input, span);
 
   return label;
 };
