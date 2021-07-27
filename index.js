@@ -7,13 +7,13 @@ const createTaskListItem = (descriptionText) => {
   label.className = "taskItem";
 
   const input = document.createElement("input");
-  input.classList.add("taskItem__checkbox");
+  input.className = "taskItem__checkbox";
   input.setAttribute("type", "checkbox");
   input.setAttribute("name", "tasks");
 
   const span = document.createElement("span");
 
-  span.classList.add("taskItem__labelText");
+  span.className = "taskItem__labelText";
   span.innerText = descriptionText;
 
   label.appendChild(input);
