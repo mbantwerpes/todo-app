@@ -2,9 +2,26 @@ const actionBtn = document.querySelector(".action-btn");
 
 const taskList = document.querySelector(".taskList");
 
-actionBtn.onclick = () => {
-  const newP = document.createElement("p");
-  newP.innerText = "Bla bli blub";
+const createTaskListItem = (descriptionText) => {
+  const label = document.createElement("label");
+  label.className = "taskItem";
 
-  taskList.appendChild(newP);
+  const input = document.createElement("input");
+  input.classList.add("taskItem__checkbox");
+  input.setAttribute("type", "checkbox");
+  input.setAttribute("name", "tasks");
+
+  const span = document.createElement("span");
+
+  span.classList.add("taskItem__labelText");
+  span.innerText = descriptionText;
+
+  label.appendChild(input);
+  label.appendChild(span);
+
+  return label;
+};
+
+actionBtn.onclick = () => {
+  taskList.appendChild(createTaskListItem("Hallo du da, ich eine Aufgabe!"));
 };
