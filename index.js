@@ -1,3 +1,10 @@
-const alertMessage = "Jooooo";
+const actionBtn = document.querySelector(".action-btn");
 
-alert(alertMessage);
+const taskList = document.querySelector(".taskList");
+
+actionBtn.onclick = () => {
+  const newP = document.createElement("p");
+  newP.innerText = "Bla bli blub";
+
+  taskList.appendChild(newP);
+};
