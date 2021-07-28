@@ -2,6 +2,16 @@ const taskList = document.querySelector(".taskList");
 
 const tasks = JSON.parse(localStorage.getItem("tasks"));
 
+const toggleTask = (taskId) => {
+  const selectedTask = tasks.findIndex((task) => task.id === taskId);
+  if (selectedTask !== -1) {
+    tasks[selectedTask].isDone = !tasks[selectedTask].isDone;
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  } else {
+    console.log("error while toggling task");
+  }
+};
+
 const createTaskListItem = (task) => {
   const label = document.createElement("label");
   label.className = "taskItem";
@@ -11,6 +21,9 @@ const createTaskListItem = (task) => {
   input.setAttribute("type", "checkbox");
   input.setAttribute("name", "tasks");
   input.checked = task.isDone;
+  input.addEventListener("change", () => {
+    toggleTask(task.id);
+  });
 
   const span = document.createElement("span");
 
@@ -45,10 +58,8 @@ const radios = document.querySelectorAll(
   'input[type=radio][name="taskListWhen"]'
 );
 
-const changeWhenHandler = (event) => {
-  renderTasks(event.target.value);
-};
-
 radios.forEach((radio) => {
-  radio.addEventListener("change", changeWhenHandler);
+  radio.addEventListener("change", (event) => {
+    renderTasks(event.target.value);
+  });
 });
