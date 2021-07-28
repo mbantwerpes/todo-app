@@ -18,6 +18,7 @@ newTaskForm.onsubmit = (event) => {
   const newTask = {
     radioValue,
     inputValue,
+    isDone: false,
   };
 
   appendTaskToLocalStorage(newTask);
