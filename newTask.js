@@ -5,10 +5,15 @@ localStorage.setItem("tasks", JSON.stringify([]));
 newTaskForm.onsubmit = (event) => {
   event.preventDefault();
 
+  const inputValue = document.querySelector(".taskDescriptionInput").value;
+
+  if (!inputValue) {
+    alert("Bitte einen Namen für die Aufgabe eingeben.");
+    return;
+  }
+
   const checkedRadio = document.querySelector(".radioButtonInput:checked");
   const radioValue = checkedRadio.value;
-
-  const inputValue = document.querySelector(".taskDescriptionInput").value;
 
   const newTask = {
     radioValue,
