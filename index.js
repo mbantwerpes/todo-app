@@ -21,18 +21,30 @@ const createTaskListItem = (descriptionText) => {
   return label;
 };
 
-tasks.forEach((task) => {
-  console.log(task.inputValue);
-  const nodeTaskItem = createTaskListItem(task.inputValue);
-  taskList.append(nodeTaskItem);
-});
+const renderTasks = (filter) => {
+  taskList.innerHTML = "";
+  tasks.forEach((task) => {
+    if (filter) {
+      if (filter === task.radioValue) {
+        const nodeTaskItem = createTaskListItem(task.inputValue);
+        taskList.append(nodeTaskItem);
+      }
+    } else {
+      const nodeTaskItem = createTaskListItem(task.inputValue);
+      taskList.append(nodeTaskItem);
+    }
+  });
+};
+
+// Render tasks on page load
+renderTasks();
 
 const radios = document.querySelectorAll(
   'input[type=radio][name="taskListWhen"]'
 );
 
 const changeWhenHandler = (event) => {
-  console.log(event.target.value);
+  renderTasks(event.target.value);
 };
 
 radios.forEach((radio) => {
