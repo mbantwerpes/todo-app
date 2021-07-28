@@ -36,9 +36,10 @@ const renderTasks = (filter) => {
   });
 };
 
-// Render tasks on page load
+// Render tasks once on page load
 renderTasks();
 
+// Get all radiobuttons and add onchange handler
 const radios = document.querySelectorAll(
   'input[type=radio][name="taskListWhen"]'
 );
