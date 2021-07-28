@@ -38,6 +38,36 @@ textarea {
   font-family: var(--ff-primary);
 }
 
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-primary-bold);
+}
+
+h1 {
+  font-size: 2.938rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-secondary-bold);
+  font-size: 0.938rem;
+}
+
+h5,
+h6 {
+  font-size: 0.8rem;
+  font-weight: var(--fw-primary);
+}
+
 .icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -121,4 +151,103 @@ textarea {
   padding: 1.9em 2.5em;
   border-top-left-radius: 0.5em;
   border-style: none;
+}
+
+/* ADD TASK */
+.newTaskFormContainer {
+  height: 100vh;
+}
+
+.newTaskForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* taskDescriptionInput */
+.newTaskForm .taskDescriptionInput {
+  width: 100%;
+  border-style: none;
+  padding: 3rem 0;
+  padding-left: 8%;
+  font-size: 2rem;
+}
+
+.newTaskForm .taskDescriptionInput::placeholder {
+  color: hsla(0, 0%, 22%, 0.21);
+  border-bottom: 3px solid hsla(343, 7%, 19%, 0.38);
+  padding-bottom: 1rem;
+}
+
+.newTaskForm .taskDescriptionInput:focus {
+  outline: none;
+}
+
+/* radioButtonGrp */
+.newTaskForm fieldset {
+  border-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 8%;
+}
+
+.radioButtonGrp {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: hsl(0, 0%, 83%, 0.1);
+  color: hsl(0, 0%, 22%, 0.68);
+  padding: 2em 1em;
+  font-size: 0.8em;
+}
+
+.radioButtonGrp li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.radioButtonGrp input {
+  size: 0;
+  opacity: 0;
+}
+
+.radioButtonGrp label {
+  cursor: pointer;
+}
+
+.radioButtonGrp input:checked + label {
+  color: var(--clr-primary);
+}
+
+/* addTaskBtn */
+.newTaskForm .addTaskBtn {
+  padding: 1.7em 0;
+  background-color: var(--clr-primary);
+  color: white;
+  border-style: none;
+  font-size: 1.2rem;
+}
+
+/* Helper class */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.addTaskContainer {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.addTaskContainer h1 {
+  padding-left: 8%;
+  align-self: end;
+  font-size: 2.4rem;
 }
