@@ -23,6 +23,8 @@ newTaskForm.onsubmit = (event) => {
   };
 
   appendTaskToLocalStorage(newTask);
+
+  newTaskForm.reset();
 };
 
 const appendTaskToLocalStorage = (newTask) => {
