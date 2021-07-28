@@ -1,6 +1,6 @@
-const actionBtn = document.querySelector(".action-btn");
-
 const taskList = document.querySelector(".taskList");
+
+const tasks = JSON.parse(localStorage.getItem("tasks"));
 
 const createTaskListItem = (descriptionText) => {
   const label = document.createElement("label");
@@ -21,6 +21,8 @@ const createTaskListItem = (descriptionText) => {
   return label;
 };
 
-actionBtn.onclick = () => {
-  taskList.appendChild(createTaskListItem("Hallo du da, ich eine Aufgabe!"));
-};
+tasks.forEach((task) => {
+  console.log(task.inputValue);
+  const nodeTaskItem = createTaskListItem(task.inputValue);
+  taskList.append(nodeTaskItem);
+});

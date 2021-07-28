@@ -1,5 +1,7 @@
 const newTaskForm = document.querySelector(".newTaskForm");
 
+localStorage.setItem("tasks", JSON.stringify([]));
+
 newTaskForm.onsubmit = (event) => {
   event.preventDefault();
 
@@ -8,5 +10,18 @@ newTaskForm.onsubmit = (event) => {
 
   const inputValue = document.querySelector(".taskDescriptionInput").value;
 
-  console.log(radioValue, inputValue);
+  const newTask = {
+    radioValue,
+    inputValue,
+  };
+
+  appendTaskToLocalStorage(newTask);
+};
+
+const appendTaskToLocalStorage = (newTask) => {
+  const tasks = JSON.parse(localStorage.getItem("tasks"));
+
+  tasks.push(newTask);
+
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 };
