@@ -2,7 +2,7 @@ const taskList = document.querySelector(".taskList");
 
 const tasks = JSON.parse(localStorage.getItem("tasks"));
 
-const createTaskListItem = (descriptionText) => {
+const createTaskListItem = (descriptionText, isDone) => {
   const label = document.createElement("label");
   label.className = "taskItem";
 
@@ -10,6 +10,7 @@ const createTaskListItem = (descriptionText) => {
   input.className = "taskItem__checkbox";
   input.setAttribute("type", "checkbox");
   input.setAttribute("name", "tasks");
+  input.checked = isDone;
 
   const span = document.createElement("span");
 
@@ -26,11 +27,11 @@ const renderTasks = (filter) => {
   tasks.forEach((task) => {
     if (filter) {
       if (filter === task.radioValue) {
-        const nodeTaskItem = createTaskListItem(task.inputValue);
+        const nodeTaskItem = createTaskListItem(task.inputValue, task.isDone);
         taskList.append(nodeTaskItem);
       }
     } else {
-      const nodeTaskItem = createTaskListItem(task.inputValue);
+      const nodeTaskItem = createTaskListItem(task.inputValue, task.isDone);
       taskList.append(nodeTaskItem);
     }
   });
