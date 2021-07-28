@@ -16,6 +16,7 @@ newTaskForm.onsubmit = (event) => {
   const when = checkedRadio.value;
 
   const newTask = {
+    id: getRandomInt(1, Number.MAX_SAFE_INTEGER),
     when,
     taskName,
     isDone: false,
@@ -31,3 +32,9 @@ const appendTaskToLocalStorage = (newTask) => {
 
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
