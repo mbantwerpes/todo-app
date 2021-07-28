@@ -251,3 +251,25 @@ h6 {
   align-self: end;
   font-size: 2.4rem;
 }
+
+.taskListRadioBtnGrp {
+  grid-row: span 2;
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  color: hsla(0, 0%, 0%, 0.2);
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  transform: rotate(180deg);
+}
+
+.taskListRadioBtnGrp input {
+  size: 0;
+  opacity: 0;
+}
+
+.taskListRadioBtnGrp input:checked + label {
+  color: var(--clr-primary);
+}

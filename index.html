@@ -21,11 +21,20 @@
           <img class="icon" src="./src/components/assets/notif.svg" alt="" />
         </button>
       </div>
-      <section class="dateSelector">
-        <a href="#" class="taskNavLink">Today</a>
-        <a href="#" class="taskNavLink">Tomorrow</a>
-        <a href="#" class="taskNavLink">This Week</a>
-      </section>
+      <div class="taskListRadioBtnGrp">
+        <div>
+          <input name="taskListWhen" type="radio" id="taskListRadioToday" />
+          <label for="taskListRadioToday">TODAY</label>
+        </div>
+        <div>
+          <input name="taskListWhen" type="radio" id="taskListRadioTomorrow" />
+          <label for="taskListRadioTomorrow">TOMORROW</label>
+        </div>
+        <div>
+          <input name="taskListWhen" type="radio" id="taskListRadioWeek" />
+          <label for="taskListRadioWeek">THIS WEEK</label>
+        </div>
+      </div>
       <section class="taskList">
         <label class="taskItem">
           <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
