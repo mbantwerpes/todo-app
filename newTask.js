@@ -1,6 +1,6 @@
 const newTaskForm = document.querySelector(".newTaskForm");
 
-localStorage.setItem("tasks", JSON.stringify([]));
+// localStorage.setItem("tasks", JSON.stringify([]));
 
 newTaskForm.onsubmit = (event) => {
   event.preventDefault();
