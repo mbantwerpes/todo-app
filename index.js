@@ -1,6 +1,6 @@
 const taskList = document.querySelector(".taskList");
 
-// const tasks = JSON.parse(localStorage.getItem("tasks"));
+const tasks = JSON.parse(localStorage.getItem("tasks"));
 
 const toggleTask = (taskId) => {
   const selectedTask = tasks.findIndex((task) => task.id === taskId);
