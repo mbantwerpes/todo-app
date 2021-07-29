@@ -1,17 +1,18 @@
 import {
   parseJSONFromLocalStorage,
   stringifyJSONToLocalStorage,
-} from "./utils/localStorage";
+} from "./utils/localStorage.js";
 
 const taskList = document.querySelector(".taskList");
 
-const tasks = JSON.parse(localStorage.getItem("tasks"));
+const tasks = parseJSONFromLocalStorage("tasks");
 
 const toggleTask = (taskId) => {
   const selectedTask = tasks.findIndex((task) => task.id === taskId);
   if (selectedTask !== -1) {
     tasks[selectedTask].isDone = !tasks[selectedTask].isDone;
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    stringifyJSONToLocalStorage("tasks", tasks);
+    // localStorage.setItem("tasks", JSON.stringify(tasks));
   } else {
     console.log("error while toggling task");
   }
