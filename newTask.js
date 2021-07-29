@@ -33,11 +33,11 @@ newTaskForm.onsubmit = (event) => {
 };
 
 const appendTaskToLocalStorage = (newTask) => {
-  const tasks = JSON.parse(localStorage.getItem("tasks"));
+  const tasks = parseJSONFromLocalStorage("tasks", []);
 
   tasks.push(newTask);
 
-  localStorage.setItem("tasks", JSON.stringify(tasks));
+  stringifyJSONToLocalStorage("tasks", tasks);
 };
 
 function getRandomInt(min, max) {
