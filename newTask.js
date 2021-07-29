@@ -1,3 +1,8 @@
+import {
+  parseJSONFromLocalStorage,
+  stringifyJSONToLocalStorage,
+} from "./utils/localStorage";
+
 const newTaskForm = document.querySelector(".newTaskForm");
 
 // localStorage.setItem("tasks", JSON.stringify([]));
