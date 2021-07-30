@@ -42,23 +42,22 @@ const createTaskListItem = (task) => {
   return label;
 };
 
-const renderTasks = (filter) => {
+const renderTasks = () => {
   taskList.innerHTML = "";
-  tasks.forEach((task) => {
-    if (filter) {
-      if (filter === task.when) {
-        const nodeTaskItem = createTaskListItem(task);
-        taskList.append(nodeTaskItem);
-      }
-    } else {
-      const nodeTaskItem = createTaskListItem(task);
-      taskList.append(nodeTaskItem);
-    }
-  });
+  const renderedTasks = tasks.map((task) => createTaskListItem(task));
+  taskList.append(...renderedTasks);
 };
 
 // Render tasks once on page load
 renderTasks();
+
+const renderFilteredTasks = (filter) => {
+  taskList.innerHTML = "";
+  const filteredTasks = tasks.filter((task) => filter === task.when);
+  filteredTasks.forEach((filteredTask) => {
+    taskList.append(createTaskListItem(filteredTask));
+  });
+};
 
 // Get all radiobuttons and add onchange handler
 const radios = document.querySelectorAll(
@@ -67,7 +66,7 @@ const radios = document.querySelectorAll(
 
 radios.forEach((radio) => {
   radio.addEventListener("change", (event) => {
-    renderTasks(event.target.value);
+    renderFilteredTasks(event.target.value);
   });
 });
 
