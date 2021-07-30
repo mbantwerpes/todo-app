@@ -8,14 +8,15 @@ const taskList = document.querySelector(".taskList");
 const tasks = parseJSONFromLocalStorage("tasks");
 
 const toggleTask = (taskId) => {
-  const selectedTask = tasks.findIndex((task) => task.id === taskId);
-  if (selectedTask !== -1) {
-    tasks[selectedTask].isDone = !tasks[selectedTask].isDone;
-    stringifyJSONToLocalStorage("tasks", tasks);
-    // localStorage.setItem("tasks", JSON.stringify(tasks));
-  } else {
-    console.log("error while toggling task");
-  }
+  stringifyJSONToLocalStorage(
+    "tasks",
+    tasks.map((task) => {
+      if (task.id === taskId) {
+        task.isDone = !task.isDone;
+      }
+      return task;
+    })
+  );
 };
 
 const createTaskListItem = (task) => {
