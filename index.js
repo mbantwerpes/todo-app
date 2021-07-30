@@ -14,6 +14,7 @@ const toggleTask = (taskId) => {
       if (task.id === taskId) {
         task.isDone = !task.isDone;
       }
+      return task;
     })
   );
 };
